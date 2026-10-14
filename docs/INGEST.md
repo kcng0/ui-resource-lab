@@ -9,9 +9,9 @@ This catalog is curated. Ingest is not a free web crawl.
 1. **User-approved links / 人工批准的链接.** A human supplies the URL and confirms it belongs in the catalog.
 2. **X/Twitter search hits / X 搜索命中.** A later search job may write hits, but only as `status: pending_review` under `data/inbox/`. They stay out of the browse catalog until a human approves them.
 
-v1 does not call the X API and does not ship a crawler. `data/inbox/` is a stub plus one fictional example so the review shape is visible.
+v1 does not call the X API and does not ship a crawler. `data/inbox/` is empty until a human or a future search job writes a `pending_review` file there.
 
-v1 不调用 X API，也不带爬虫。`data/inbox/` 只是占位，外加一条虚构示例，用来把待审记录的形状摆出来。
+v1 不调用 X API，也不带爬虫。`data/inbox/` 现在是空的，直到人工或以后的搜索任务写入一条 `pending_review`。
 
 ## Rules-outside → stop and ask / 规则之外：停下并询问
 

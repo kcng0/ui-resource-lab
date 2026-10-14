@@ -1,19 +1,19 @@
 {
   "id": "magic-ui",
   "title": "Magic UI",
-  "source_url": "https://magicui.design",
+  "source_url": "https://magicui.design/",
   "kind": "component_library",
-  "vibe": ["cinematic", "playful"],
+  "vibe": ["cinematic", "technical"],
   "scene": ["landing", "marketing"],
   "stack": ["react", "tailwind", "typescript", "motion"],
-  "license": "mixed",
+  "license": "free",
   "preview": {
     "screenshot": "/previews/magic-ui.svg",
-    "embed_url": "https://magicui.design"
+    "embed_url": "https://magicui.design/"
   },
-  "usage": "Example pattern for this catalog. Not an official snippet.\n\nThe free library is MIT and is copied into the repo. Pro sections and templates are a separate paid license.\n\n```tsx\nimport { ExampleMark } from \"@/components/magicui/example-mark\";\n\nexport function HeroLine() {\n  return <ExampleMark label=\"Quiet launch\" />;\n}\n```\n\n`ExampleMark` is a stand-in for whatever component you pasted locally. It is not a claim about Magic UI's public exports.",
-  "notes": "Example catalog record, written by hand for the scaffold — not crawled. Magic UI publishes animated React components for design engineers (MIT on the open-source library) plus a paid Pro tier of sections and templates. The usual stack is React, TypeScript, Tailwind CSS, and Motion.",
+  "usage": "Approved seed. The public installation page says Magic UI uses the same process as shadcn/ui. This is their documented example (`Globe`).\n\n```bash\nnpx shadcn@latest init\nnpx shadcn@latest add @magicui/globe\n```\n\n```tsx\nimport { Globe } from \"@/components/ui/globe\";\n\nexport function Home() {\n  return <Globe />;\n}\n```",
+  "notes": "Approved seed. The homepage describes Magic UI as a UI library for design engineers: 150+ free and open-source animated components and effects, built with React, TypeScript, Tailwind CSS, and Motion, as a companion to shadcn/ui. The docs say the components, blocks, and templates are for landing pages and marketing materials. license is free from that public description.\n\nTODO: cinematic 是现有 slug 里最接近 “animated effects / magical landing pages” 的归类，不是对方的原话。若人工不同意，改到已有 vibe，不要新造 slug。",
   "status": "approved",
-  "created_at": "2026-10-14T00:00:00.000Z",
-  "updated_at": "2026-10-14T00:00:00.000Z"
+  "created_at": "2026-10-14T07:34:00.000Z",
+  "updated_at": "2026-10-14T07:34:00.000Z"
 }

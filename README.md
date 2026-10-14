@@ -43,7 +43,7 @@ public/previews/              示例画稿
 src/                          Vite + React + TypeScript + Tailwind
 ```
 
-示例记录来自 21st.dev、shadcn/ui、Magic UI、Aceternity UI、Hover.dev、Uiverse、Tailwind Plus 的公开信息，但是**手写占位**，笔记里写了 Example。画稿不是那些站点的真实截图。
+已批准的种子是这四条组件库：Uiverse、21st.dev、Magic UI、shadcn/ui。记录按公开信息填写；气质拿不准的写在笔记 `TODO` 里，没有新造分类。`data/inbox/` 目前是空的。`public/previews/` 仍是本地画稿，不是那些站点的真实截图。
 
 批准一条 inbox 记录：把 `status` 改成 `approved`，更新 `updated_at`，把文件移到 `data/resources/`，再跑 `npm run validate`。细节和「规则之外就停下来问人」见 [docs/INGEST.md](docs/INGEST.md)。
 

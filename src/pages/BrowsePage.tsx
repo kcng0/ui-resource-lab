@@ -53,9 +53,9 @@ export function BrowsePage() {
         按气质与场景浏览
       </h1>
       <p className="mt-3 max-w-2xl text-sm leading-6 text-muted">
-        主轴是气质 vibe 与场景 scene。技术栈和许可是筛选项。示例条目是手写占位，不是爬虫结果。
-        Browse on vibe and scene. Stack and license only filter. Seed records are hand-written
-        examples, not a crawl.
+        主轴是气质 vibe 与场景 scene。技术栈和许可是筛选项。目录里是人工批准的组件库，不是爬虫结果。
+        Browse on vibe and scene. Stack and license only filter. The catalog is human-approved
+        libraries, not a crawl.
       </p>
 
       <div className="mt-8 grid w-full min-w-0 gap-8 lg:grid-cols-[220px_minmax(0,1fr)]">

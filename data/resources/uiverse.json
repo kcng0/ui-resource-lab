@@ -1,19 +1,19 @@
 {
   "id": "uiverse",
   "title": "Uiverse",
-  "source_url": "https://uiverse.io",
-  "kind": "showcase",
-  "vibe": ["playful", "soft"],
-  "scene": ["marketing", "app-shell"],
-  "stack": ["css", "html", "tailwind"],
+  "source_url": "https://uiverse.io/",
+  "kind": "component_library",
+  "vibe": ["playful"],
+  "scene": ["app-shell"],
+  "stack": ["html", "css", "tailwind", "react"],
   "license": "free",
   "preview": {
     "screenshot": "/previews/uiverse.svg",
-    "embed_url": "https://uiverse.io"
+    "embed_url": "https://uiverse.io/"
   },
-  "usage": "Example pattern for this catalog. Not an official snippet.\n\nOpen an element and copy its HTML/CSS, Tailwind, or React export into your page. Check that element's license (often MIT) before you ship it.\n\n```html\n<button class=\"example-pill\" type=\"button\">Copy me</button>\n```\n\n```css\n.example-pill {\n  border: 0;\n  border-radius: 999px;\n  padding: 0.7rem 1.1rem;\n  background: #111;\n  color: #fff;\n}\n```",
-  "notes": "Example catalog record, written by hand for the scaffold — not crawled. Uiverse is a community showcase of open-source UI elements you can copy as HTML/CSS, Tailwind, React, or Figma. Individual elements carry their own licenses; the element page is the source of truth.",
+  "usage": "Approved seed. Open an element and copy the HTML/CSS, Tailwind, React, or Figma export from that page. There is no shared package. Read the license on the element page before shipping it; many elements are MIT.",
+  "notes": "Approved seed. Uiverse's homepage calls it a community-built library of open-source UI elements you copy as HTML/CSS, Tailwind, React, and Figma. Public curated groups include loading UI, animated buttons, glassmorphism cards, forms, and tooltips. Access to the library is free, so license is free. An element's own license can still differ.\n\nTODO: 整站气质不单一。playful 只暂代 animated buttons 这类社区小组件的常见观感，不是新词。glassmorphism 等不单开 vibe。scene 只用已有的 app-shell；forms、tooltips、loading 还不是场景轴。",
   "status": "approved",
-  "created_at": "2026-10-14T00:00:00.000Z",
-  "updated_at": "2026-10-14T00:00:00.000Z"
+  "created_at": "2026-10-14T07:34:00.000Z",
+  "updated_at": "2026-10-14T07:34:00.000Z"
 }

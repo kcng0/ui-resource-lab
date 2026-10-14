@@ -7,8 +7,8 @@ import addFormats from "ajv-formats";
 const root = fileURLToPath(new URL("..", import.meta.url));
 const schemaPath = join(root, "schema", "resource.schema.json");
 const folders = [
-  { dir: join(root, "data", "resources"), status: "approved" },
-  { dir: join(root, "data", "inbox"), status: "pending_review" },
+  { dir: join(root, "data", "resources"), status: "approved", allowEmpty: false },
+  { dir: join(root, "data", "inbox"), status: "pending_review", allowEmpty: true },
 ];
 
 const ajv = new Ajv2020({ allErrors: true, strict: true });
@@ -20,7 +20,7 @@ const seenIds = new Map();
 
 for (const folder of folders) {
   const files = readdirSync(folder.dir).filter((name) => name.endsWith(".json")).sort();
-  if (files.length === 0) {
+  if (files.length === 0 && !folder.allowEmpty) {
     errors.push(`${folder.dir}: expected at least one JSON record`);
   }
 
