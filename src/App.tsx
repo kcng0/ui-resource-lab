@@ -4,9 +4,11 @@ import { BrowsePage } from "./pages/BrowsePage.tsx";
 import { DetailPage, NotFoundPage } from "./pages/DetailPage.tsx";
 import { InboxPage } from "./pages/InboxPage.tsx";
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || undefined;
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route element={<AppShell />}>
           <Route index element={<BrowsePage />} />
