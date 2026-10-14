@@ -36,7 +36,7 @@ export function AppShell() {
           </nav>
         </div>
       </header>
-      <main className="mx-auto max-w-6xl px-5 py-8">
+      <main className="mx-auto min-w-0 max-w-6xl px-5 py-8">
         <Outlet />
       </main>
       <footer className="mx-auto max-w-6xl px-5 pb-10 text-xs leading-5 text-muted">

@@ -58,8 +58,8 @@ export function BrowsePage() {
         examples, not a crawl.
       </p>
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[220px_minmax(0,1fr)]">
-        <aside className="lg:sticky lg:top-24 lg:self-start">
+      <div className="mt-8 grid w-full min-w-0 gap-8 lg:grid-cols-[220px_minmax(0,1fr)]">
+        <aside className="min-w-0 lg:sticky lg:top-24 lg:self-start">
           <div className="flex gap-1 rounded-full border border-line bg-white/70 p-1" role="group" aria-label="浏览轴">
             <AxisButton
               active={query.axis === "vibe"}
@@ -74,7 +74,7 @@ export function BrowsePage() {
               场景 Scene
             </AxisButton>
           </div>
-          <div className="mt-3 flex gap-2 overflow-x-auto pb-1 lg:flex-col lg:overflow-visible" role="group" aria-label="分类">
+          <div className="mt-3 flex w-full gap-2 overflow-x-auto pb-1 lg:flex-col lg:overflow-visible" role="group" aria-label="分类">
             <CategoryButton
               active={query.category === null}
               count={forCategories.length}
@@ -95,7 +95,7 @@ export function BrowsePage() {
           </div>
         </aside>
 
-        <div>
+        <div className="min-w-0">
           <div className="flex flex-col gap-3">
             <label className="block">
               <span className="sr-only">搜索 Search</span>

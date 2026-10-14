@@ -92,7 +92,7 @@ export function DetailPage({ queue = false }: { queue?: boolean }) {
 
       {resource.x_meta ? (
         <section className="mt-4 rounded-2xl border border-line bg-white/60 p-4">
-          <h2 className="text-xs tracking-[0.14em] text-muted uppercase">x_meta</h2>
+          <h2 className="text-xs tracking-[0.14em] text-muted">推文信息 x_meta</h2>
           <dl className="mt-3 grid gap-3 text-sm sm:grid-cols-2">
             <div>
               <dt className="text-muted">作者 Author</dt>
