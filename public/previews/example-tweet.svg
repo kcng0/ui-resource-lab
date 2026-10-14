@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img">
+  <title>Example tweet plate</title>
+  <rect width="800" height="500" fill="#efe8dc"/>
+  <rect x="140" y="70" width="520" height="340" rx="22" fill="#fffdf9" stroke="#e0d5c6"/>
+  <circle cx="196" cy="132" r="28" fill="#1c1915"/>
+  <rect x="240" y="116" width="120" height="10" rx="5" fill="#1c1915"/>
+  <rect x="240" y="136" width="70" height="8" rx="4" fill="#c9bfb2"/>
+  <rect x="180" y="186" width="440" height="10" rx="5" fill="#1c1915"/>
+  <rect x="180" y="210" width="390" height="10" rx="5" fill="#1c1915"/>
+  <rect x="180" y="234" width="300" height="10" rx="5" fill="#d9cfc2"/>
+  <rect x="180" y="280" width="440" height="80" rx="14" fill="#1b2430"/>
+  <rect x="204" y="304" width="160" height="8" rx="4" fill="#8fb4c9"/>
+  <rect x="204" y="324" width="220" height="8" rx="4" fill="#395c78"/>
+  <text x="620" y="128" font-family="Georgia, serif" font-size="13" fill="#9a431f">EXAMPLE</text>
+  <text x="752" y="478" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#1c1915" opacity="0.45">example plate</text>
+</svg>

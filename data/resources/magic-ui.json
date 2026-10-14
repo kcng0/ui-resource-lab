@@ -1,0 +1,19 @@
+{
+  "id": "magic-ui",
+  "title": "Magic UI",
+  "source_url": "https://magicui.design",
+  "kind": "component_library",
+  "vibe": ["cinematic", "playful"],
+  "scene": ["landing", "marketing"],
+  "stack": ["react", "tailwind", "typescript", "motion"],
+  "license": "mixed",
+  "preview": {
+    "screenshot": "/previews/magic-ui.svg",
+    "embed_url": "https://magicui.design"
+  },
+  "usage": "Example pattern for this catalog. Not an official snippet.\n\nThe free library is MIT and is copied into the repo. Pro sections and templates are a separate paid license.\n\n```tsx\nimport { ExampleMark } from \"@/components/magicui/example-mark\";\n\nexport function HeroLine() {\n  return <ExampleMark label=\"Quiet launch\" />;\n}\n```\n\n`ExampleMark` is a stand-in for whatever component you pasted locally. It is not a claim about Magic UI's public exports.",
+  "notes": "Example catalog record, written by hand for the scaffold — not crawled. Magic UI publishes animated React components for design engineers (MIT on the open-source library) plus a paid Pro tier of sections and templates. The usual stack is React, TypeScript, Tailwind CSS, and Motion.",
+  "status": "approved",
+  "created_at": "2026-10-14T00:00:00.000Z",
+  "updated_at": "2026-10-14T00:00:00.000Z"
+}

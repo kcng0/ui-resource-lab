@@ -1,0 +1,19 @@
+{
+  "id": "shadcn-ui",
+  "title": "shadcn/ui",
+  "source_url": "https://ui.shadcn.com",
+  "kind": "open_source",
+  "vibe": ["minimal", "technical"],
+  "scene": ["dashboard", "docs", "app-shell"],
+  "stack": ["react", "tailwind", "typescript", "radix"],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/shadcn-ui.svg",
+    "embed_url": "https://ui.shadcn.com"
+  },
+  "usage": "Example pattern for this catalog. Not an official snippet.\n\n```bash\nnpx shadcn@latest init\nnpx shadcn@latest add button\n```\n\n```tsx\nimport { Button } from \"@/components/ui/button\";\n\nexport function SaveBar() {\n  return <Button type=\"submit\">Save</Button>;\n}\n```",
+  "notes": "Example catalog record, written by hand for the scaffold — not crawled. shadcn/ui is an open-source copy-paste collection (MIT) of React components styled with Tailwind CSS and built on Radix. Components are added into your repo; there is no runtime package to upgrade.",
+  "status": "approved",
+  "created_at": "2026-10-14T00:00:00.000Z",
+  "updated_at": "2026-10-14T00:00:00.000Z"
+}

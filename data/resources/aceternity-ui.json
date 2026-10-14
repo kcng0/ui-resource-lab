@@ -1,0 +1,19 @@
+{
+  "id": "aceternity-ui",
+  "title": "Aceternity UI",
+  "source_url": "https://ui.aceternity.com",
+  "kind": "component_library",
+  "vibe": ["cinematic", "luxury"],
+  "scene": ["landing", "marketing", "portfolio"],
+  "stack": ["react", "tailwind", "typescript", "motion", "next"],
+  "license": "mixed",
+  "preview": {
+    "screenshot": "/previews/aceternity-ui.svg",
+    "embed_url": "https://ui.aceternity.com"
+  },
+  "usage": "Example pattern for this catalog. Not an official snippet.\n\nFree components are pasted into a Next.js or React app that already uses Tailwind CSS and Motion. Premium blocks need the paid plan.\n\n```tsx\nexport function SpotlightHero() {\n  return (\n    <section className=\"relative overflow-hidden bg-neutral-950 text-white\">\n      <h1 className=\"text-5xl font-semibold tracking-tight\">Hold the light still.</h1>\n    </section>\n  );\n}\n```\n\nThe markup above is an illustration of the look, not an Aceternity component.",
+  "notes": "Example catalog record, written by hand for the scaffold — not crawled. Aceternity UI is a copy-paste React and Next.js library built with Tailwind CSS and Motion. Free components may be used in personal and commercial end products; reselling or redistributing them as a competing library or template is not allowed. A paid tier adds premium blocks and page templates.",
+  "status": "approved",
+  "created_at": "2026-10-14T00:00:00.000Z",
+  "updated_at": "2026-10-14T00:00:00.000Z"
+}

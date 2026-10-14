@@ -1,0 +1,19 @@
+{
+  "id": "21st-dev",
+  "title": "21st.dev",
+  "source_url": "https://21st.dev",
+  "kind": "component_library",
+  "vibe": ["technical", "editorial"],
+  "scene": ["marketing", "landing"],
+  "stack": ["react", "tailwind", "typescript"],
+  "license": "mixed",
+  "preview": {
+    "screenshot": "/previews/21st-dev.svg",
+    "embed_url": "https://21st.dev"
+  },
+  "usage": "Example pattern for this catalog. Not an official snippet.\n\nBrowse a component, then install that registry item into your own repo:\n\n```bash\nnpx shadcn@latest add \"<registry-url-from-the-component-page>\"\n```\n\nBrowsing is free. Daily free copies are limited; membership unlocks more copies and premium templates. Confirm the component's own license before shipping it.",
+  "notes": "Example catalog record, written by hand for the scaffold — not crawled. 21st.dev is a community registry of React and Tailwind components, templates, and shadcn themes in the shadcn registry format. Code is copied into your repo rather than imported from a runtime package. Per-component licenses differ. The platform source repository is MIT.",
+  "status": "approved",
+  "created_at": "2026-10-14T00:00:00.000Z",
+  "updated_at": "2026-10-14T00:00:00.000Z"
+}

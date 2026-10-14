@@ -1,0 +1,19 @@
+{
+  "id": "uiverse",
+  "title": "Uiverse",
+  "source_url": "https://uiverse.io",
+  "kind": "showcase",
+  "vibe": ["playful", "soft"],
+  "scene": ["marketing", "app-shell"],
+  "stack": ["css", "html", "tailwind"],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse.svg",
+    "embed_url": "https://uiverse.io"
+  },
+  "usage": "Example pattern for this catalog. Not an official snippet.\n\nOpen an element and copy its HTML/CSS, Tailwind, or React export into your page. Check that element's license (often MIT) before you ship it.\n\n```html\n<button class=\"example-pill\" type=\"button\">Copy me</button>\n```\n\n```css\n.example-pill {\n  border: 0;\n  border-radius: 999px;\n  padding: 0.7rem 1.1rem;\n  background: #111;\n  color: #fff;\n}\n```",
+  "notes": "Example catalog record, written by hand for the scaffold — not crawled. Uiverse is a community showcase of open-source UI elements you can copy as HTML/CSS, Tailwind, React, or Figma. Individual elements carry their own licenses; the element page is the source of truth.",
+  "status": "approved",
+  "created_at": "2026-10-14T00:00:00.000Z",
+  "updated_at": "2026-10-14T00:00:00.000Z"
+}
