@@ -19,11 +19,12 @@
   ],
   "license": "free",
   "preview": {
-    "embed_url": "https://magicui.design/docs/components/animated-circular-progress-bar"
+    "embed_url": "https://magicui.design/docs/components/animated-circular-progress-bar",
+    "screenshot": "/previews/magicui/magicui-animated-circular-progress-bar.png"
   },
   "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/animated-circular-progress-bar\n```\n\nAnimated Circular Progress Bar is a component that displays a circular gauge with a percentage value.",
-  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review. Screenshot backfilled from docs page preview region.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:00:27.095Z",
-  "updated_at": "2026-10-14T10:00:27.095Z"
+  "updated_at": "2026-10-14T10:34:54.985Z"
 }

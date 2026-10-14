@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-allyhere-slippery-fly-8",
+  "title": "Slippery Fly 8",
+  "source_url": "https://uiverse.io/Allyhere/slippery-fly-8",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell",
+    "docs"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-allyhere-slippery-fly-8.png",
+    "embed_url": "https://uiverse.io/Allyhere/slippery-fly-8"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Inputs/Allyhere_slippery-fly-8.html`).\n\nOpen https://uiverse.io/Allyhere/slippery-fly-8 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Allyhere`. tags: input. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

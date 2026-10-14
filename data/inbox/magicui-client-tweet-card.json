@@ -20,11 +20,12 @@
   ],
   "license": "free",
   "preview": {
-    "embed_url": "https://magicui.design/docs/components/client-tweet-card"
+    "embed_url": "https://magicui.design/docs/components/client-tweet-card",
+    "screenshot": "/previews/magicui/magicui-client-tweet-card.png"
   },
   "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/client-tweet-card\n```\n\nA client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.",
   "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:00:27.095Z",
-  "updated_at": "2026-10-14T10:00:27.095Z"
+  "updated_at": "2026-10-14T10:45:47.944Z"
 }

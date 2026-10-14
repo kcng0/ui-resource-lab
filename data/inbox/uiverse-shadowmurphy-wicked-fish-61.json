@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-shadowmurphy-wicked-fish-61",
+  "title": "Wicked Fish 61",
+  "source_url": "https://uiverse.io/shadowmurphy/wicked-fish-61",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-shadowmurphy-wicked-fish-61.png",
+    "embed_url": "https://uiverse.io/shadowmurphy/wicked-fish-61"
+  },
+  "usage": "Harvested from Uiverse galaxy (`loaders/shadowmurphy_wicked-fish-61.html`).\n\nOpen https://uiverse.io/shadowmurphy/wicked-fish-61 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `shadowmurphy`. tags: gradient, loader, animated. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

@@ -20,11 +20,12 @@
   ],
   "license": "free",
   "preview": {
-    "embed_url": "https://magicui.design/docs/components/shiny-button"
+    "embed_url": "https://magicui.design/docs/components/shiny-button",
+    "screenshot": "/previews/magicui/magicui-shiny-button.png"
   },
   "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/shiny-button\n```\n\nA shiny button component with dynamic styles in the dark mode or light mode.",
-  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review. Screenshot backfilled from docs page preview region.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:00:27.095Z",
-  "updated_at": "2026-10-14T10:00:27.095Z"
+  "updated_at": "2026-10-14T10:34:54.985Z"
 }

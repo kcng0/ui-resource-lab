@@ -20,11 +20,12 @@
   ],
   "license": "free",
   "preview": {
-    "embed_url": "https://magicui.design/docs/components/comic-text"
+    "embed_url": "https://magicui.design/docs/components/comic-text",
+    "screenshot": "/previews/magicui/magicui-comic-text.png"
   },
   "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/comic-text\n```\n\nComic text animation",
-  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review. Screenshot backfilled from docs page preview region.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:00:27.095Z",
-  "updated_at": "2026-10-14T10:00:27.095Z"
+  "updated_at": "2026-10-14T10:34:54.985Z"
 }

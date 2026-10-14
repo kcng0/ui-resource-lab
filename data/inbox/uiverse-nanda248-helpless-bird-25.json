@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-nanda248-helpless-bird-25",
+  "title": "Helpless Bird 25",
+  "source_url": "https://uiverse.io/nanda248/helpless-bird-25",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-nanda248-helpless-bird-25.png",
+    "embed_url": "https://uiverse.io/nanda248/helpless-bird-25"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Toggle-switches/nanda248_helpless-bird-25.html`).\n\nOpen https://uiverse.io/nanda248/helpless-bird-25 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `nanda248`. tags: switch, light&dark, AM/PM. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

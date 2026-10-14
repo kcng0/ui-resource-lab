@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-mrez321-tame-squid-31",
+  "title": "Tame Squid 31",
+  "source_url": "https://uiverse.io/MRez321/tame-squid-31",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-mrez321-tame-squid-31.png",
+    "embed_url": "https://uiverse.io/MRez321/tame-squid-31"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Buttons/MRez321_tame-squid-31.html`).\n\nOpen https://uiverse.io/MRez321/tame-squid-31 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `MRez321`. tags: button, hover, animated, hover button, #button, button hover effect. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

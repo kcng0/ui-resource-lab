@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-praashoo7-gentle-grasshopper-65",
+  "title": "Gentle Grasshopper 65",
+  "source_url": "https://uiverse.io/Praashoo7/gentle-grasshopper-65",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-praashoo7-gentle-grasshopper-65.png",
+    "embed_url": "https://uiverse.io/Praashoo7/gentle-grasshopper-65"
+  },
+  "usage": "Harvested from Uiverse galaxy (`loaders/Praashoo7_gentle-grasshopper-65.html`).\n\nOpen https://uiverse.io/Praashoo7/gentle-grasshopper-65 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Praashoo7`. tags: loader, smooth. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

@@ -20,11 +20,12 @@
   ],
   "license": "free",
   "preview": {
-    "embed_url": "https://magicui.design/docs/components/floating-3d-particles"
+    "embed_url": "https://magicui.design/docs/components/floating-3d-particles",
+    "screenshot": "/previews/magicui/magicui-floating-3d-particles.png"
   },
   "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/floating-3d-particles\n```\n\nA canvas-based pseudo-3D particle field with perspective projection, continuous rotation and buoyant drift.",
-  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review. Screenshot backfilled from docs page preview region.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:00:27.095Z",
-  "updated_at": "2026-10-14T10:00:27.095Z"
+  "updated_at": "2026-10-14T10:34:54.985Z"
 }

@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-taniadou-friendly-badger-72",
+  "title": "Friendly Badger 72",
+  "source_url": "https://uiverse.io/TaniaDou/friendly-badger-72",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell",
+    "docs"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-taniadou-friendly-badger-72.png",
+    "embed_url": "https://uiverse.io/TaniaDou/friendly-badger-72"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Inputs/TaniaDou_friendly-badger-72.html`).\n\nOpen https://uiverse.io/TaniaDou/friendly-badger-72 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `TaniaDou`. tags: input, remove, placeholder, cool input. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

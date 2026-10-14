@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-praashoo7-bitter-pig-24",
+  "title": "Bitter Pig 24",
+  "source_url": "https://uiverse.io/Praashoo7/bitter-pig-24",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-praashoo7-bitter-pig-24.png",
+    "embed_url": "https://uiverse.io/Praashoo7/bitter-pig-24"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Forms/Praashoo7_bitter-pig-24.html`).\n\nOpen https://uiverse.io/Praashoo7/bitter-pig-24 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Praashoo7`. tags: login, form, stitched. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

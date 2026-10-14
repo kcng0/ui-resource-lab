@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-0xnihilism-brown-puma-30",
+  "title": "Brown Puma 30",
+  "source_url": "https://uiverse.io/0xnihilism/brown-puma-30",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-0xnihilism-brown-puma-30.png",
+    "embed_url": "https://uiverse.io/0xnihilism/brown-puma-30"
+  },
+  "usage": "Harvested from Uiverse galaxy (`loaders/0xnihilism_brown-puma-30.html`).\n\nOpen https://uiverse.io/0xnihilism/brown-puma-30 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `0xnihilism`. tags: loading, loader, animated, light&dark, brutalism, orwellian. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

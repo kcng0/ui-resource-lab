@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-galahhad-average-snail-50",
+  "title": "Average Snail 50",
+  "source_url": "https://uiverse.io/Galahhad/average-snail-50",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell",
+    "docs"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-galahhad-average-snail-50.png",
+    "embed_url": "https://uiverse.io/Galahhad/average-snail-50"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Inputs/Galahhad_average-snail-50.html`).\n\nOpen https://uiverse.io/Galahhad/average-snail-50 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Galahhad`. tags: input. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

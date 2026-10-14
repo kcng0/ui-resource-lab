@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-jaydipprajapati1910-slimy-starfish-15",
+  "title": "Slimy Starfish 15",
+  "source_url": "https://uiverse.io/JaydipPrajapati1910/slimy-starfish-15",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "marketing",
+    "landing"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-jaydipprajapati1910-slimy-starfish-15.png",
+    "embed_url": "https://uiverse.io/JaydipPrajapati1910/slimy-starfish-15"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Cards/JaydipPrajapati1910_slimy-starfish-15.html`).\n\nOpen https://uiverse.io/JaydipPrajapati1910/slimy-starfish-15 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `JaydipPrajapati1910`. tags: card, white and red, card template, ribbon. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

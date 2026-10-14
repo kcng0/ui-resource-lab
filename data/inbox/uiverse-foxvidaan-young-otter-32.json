@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-foxvidaan-young-otter-32",
+  "title": "Young Otter 32",
+  "source_url": "https://uiverse.io/FoxVidaan/young-otter-32",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "marketing",
+    "landing"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-foxvidaan-young-otter-32.png",
+    "embed_url": "https://uiverse.io/FoxVidaan/young-otter-32"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Cards/FoxVidaan_young-otter-32.html`).\n\nOpen https://uiverse.io/FoxVidaan/young-otter-32 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `FoxVidaan`. tags: card. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

@@ -20,11 +20,12 @@
   ],
   "license": "free",
   "preview": {
-    "embed_url": "https://magicui.design/docs/components/line-shadow-text"
+    "embed_url": "https://magicui.design/docs/components/line-shadow-text",
+    "screenshot": "/previews/magicui/magicui-line-shadow-text.png"
   },
   "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/line-shadow-text\n```\n\nA text component with a moving line shadow.",
-  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review. Screenshot backfilled from docs page preview region.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:00:27.095Z",
-  "updated_at": "2026-10-14T10:00:27.095Z"
+  "updated_at": "2026-10-14T10:34:54.985Z"
 }
