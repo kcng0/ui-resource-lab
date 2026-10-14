@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { assetUrl } from "../lib/assetUrl.ts";
+import { assetUrl, isEmbeddablePreviewUrl } from "../lib/assetUrl.ts";
 import { stackLabel } from "../labels.ts";
 import type { Resource } from "../types.ts";
 import { KindBadge, LicenseBadge, SourceBadge, StatusBadge } from "./Badges.tsx";
@@ -36,7 +36,8 @@ function CardMedia({
   resource: Resource;
   accent: { soft: string; mark: string };
 }) {
-  const embedUrl = resource.preview.embed_url;
+  const rawEmbed = resource.preview.embed_url;
+  const embedUrl = isEmbeddablePreviewUrl(rawEmbed) ? rawEmbed : undefined;
   const shot = assetUrl(resource.preview.screenshot);
   const hostRef = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);

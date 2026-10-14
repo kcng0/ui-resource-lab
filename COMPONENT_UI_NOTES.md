@@ -23,3 +23,5 @@
 - Cards + detail prefer `preview.embed_url` (official / source live preview).
 - `preview.screenshot` is fallback only; resolve via `assetUrl()` so Pages `BASE_URL` (`/ui-resource-lab/`) is applied.
 - Card iframes are lazy (IntersectionObserver) and `pointer-events-none` so the tile stays a link.
+
+- Skip iframe when `isEmbeddablePreviewUrl(embed_url)` is false (docs shells / XFO); show screenshot instead so tiles are not blank.

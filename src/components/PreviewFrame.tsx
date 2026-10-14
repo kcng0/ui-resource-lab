@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { assetUrl } from "../lib/assetUrl.ts";
+import { assetUrl, isEmbeddablePreviewUrl } from "../lib/assetUrl.ts";
 import type { Resource } from "../types.ts";
 
 export function PreviewFrame({ resource }: { resource: Resource }) {
   const screenshot = assetUrl(resource.preview.screenshot);
-  const embedUrl = resource.preview.embed_url;
-  /** Prefer live source preview; local shot is fallback only. */
+  const rawEmbed = resource.preview.embed_url;
+  const embedUrl = isEmbeddablePreviewUrl(rawEmbed) ? rawEmbed : undefined;
+  /** Prefer live only when URL is frameable; else screenshot (BASE_URL). */
   const [mode, setMode] = useState<"shot" | "embed">(embedUrl ? "embed" : "shot");
   const showEmbed = mode === "embed" && Boolean(embedUrl);
 
@@ -71,8 +72,7 @@ export function PreviewFrame({ resource }: { resource: Resource }) {
           ) : null}
         </div>
         <p className="max-w-md text-xs leading-5 text-muted">
-          优先嵌各源官方组件预览；源站更新会跟着变。截图仅作 fallback（已带 Pages BASE_URL）。站若禁 iframe
-          可切手动。
+          仅嵌可 frame 的组件 preview（cdn /embed 等）。整页文档链（如 Uiverse XFO）自动退回截图；截图已带 Pages BASE_URL。
         </p>
       </figcaption>
     </figure>
