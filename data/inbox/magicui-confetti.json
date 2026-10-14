@@ -1,0 +1,29 @@
+{
+  "id": "magicui-confetti",
+  "title": "Confetti",
+  "source_url": "https://magicui.design/docs/components/confetti",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/confetti"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/confetti\n```\n\nConfetti animations are best used to delight your users when something special happens",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

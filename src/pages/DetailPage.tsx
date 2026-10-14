@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { findApproved, findInbox } from "../catalog.ts";
-import { KindBadge, LicenseBadge, StatusBadge } from "../components/Badges.tsx";
+import { KindBadge, LicenseBadge, SourceBadge, StatusBadge } from "../components/Badges.tsx";
 import { PreviewFrame } from "../components/PreviewFrame.tsx";
 import { UsageBlock } from "../components/UsageBlock.tsx";
 import { formatDate } from "../format.ts";

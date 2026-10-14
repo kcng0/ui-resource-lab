@@ -1,4 +1,5 @@
-import { kindLabels, licenseLabels, licenseTone } from "../labels.ts";
+import { kindLabels, licenseLabels, licenseTone, sourceLabels } from "../labels.ts";
+import type { Source } from "../types.ts";
 import type { Kind, License, Status } from "../types.ts";
 
 export function KindBadge({ kind }: { kind: Kind }) {
@@ -37,6 +38,15 @@ export function StatusBadge({ status }: { status: Status }) {
       <span className="size-1.5 animate-pulse rounded-full bg-copper" aria-hidden />
       待审
       <span className="font-normal opacity-70">pending</span>
+    </span>
+  );
+}
+
+export function SourceBadge({ source }: { source: Source }) {
+  const label = sourceLabels[source];
+  return (
+    <span className="inline-flex items-center rounded-full bg-ink/5 px-2 py-0.5 text-[11px] font-medium text-ink/70">
+      {label.zh}
     </span>
   );
 }

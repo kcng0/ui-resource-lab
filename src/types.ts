@@ -1,4 +1,5 @@
-export type Kind = "component_library" | "showcase" | "open_source" | "tweet";
+export type Kind = "component" | "component_library" | "showcase" | "open_source" | "tweet";
+export type Source = "shadcn" | "magicui" | "uiverse" | "21st";
 export type License = "free" | "pro" | "mixed";
 export type Status = "pending_review" | "approved";
 export type Axis = "vibe" | "scene";
@@ -20,6 +21,7 @@ export interface Resource {
   title: string;
   source_url: string;
   kind: Kind;
+  source: Source;
   vibe: string[];
   scene: string[];
   stack: string[];
@@ -39,4 +41,5 @@ export interface BrowseQuery {
   q: string;
   license: License | null;
   stacks: string[];
+  sources: Source[];
 }

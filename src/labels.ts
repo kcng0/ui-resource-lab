@@ -1,4 +1,4 @@
-import type { Axis, Kind, License } from "./types.ts";
+import type { Axis, Kind, License, Source } from "./types.ts";
 
 export const vibeLabels: Record<string, string> = {
   minimal: "极简",
@@ -35,6 +35,7 @@ const stackLabels: Record<string, string> = {
 };
 
 export const kindLabels: Record<Kind, { zh: string; en: string }> = {
+  component: { zh: "组件", en: "Component" },
   component_library: { zh: "组件库", en: "Library" },
   showcase: { zh: "陈列", en: "Showcase" },
   open_source: { zh: "开源", en: "Open source" },
@@ -61,3 +62,10 @@ export function axisValueLabel(axis: Axis, slug: string): string {
   const zh = axis === "vibe" ? vibeLabels[slug] : sceneLabels[slug];
   return zh ? `${zh} ${slug}` : slug;
 }
+
+export const sourceLabels: Record<Source, { zh: string; en: string }> = {
+  shadcn: { zh: "shadcn/ui", en: "shadcn/ui" },
+  magicui: { zh: "Magic UI", en: "Magic UI" },
+  uiverse: { zh: "Uiverse", en: "Uiverse" },
+  "21st": { zh: "21st.dev", en: "21st.dev" },
+};

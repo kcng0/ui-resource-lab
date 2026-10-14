@@ -1,0 +1,30 @@
+{
+  "id": "magicui-file-tree",
+  "title": "File Tree",
+  "source_url": "https://magicui.design/docs/components/file-tree",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful",
+    "cinematic"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/file-tree"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/file-tree\n```\n\nA component used to showcase the folder and file structure of a directory.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

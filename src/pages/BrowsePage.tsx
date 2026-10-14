@@ -193,7 +193,7 @@ export function BrowsePage() {
             {filtered ? (
               <button
                 type="button"
-                onClick={() => update({ ...query, category: null, q: "", license: null, stacks: [] })}
+                onClick={() => update({ ...query, category: null, q: "", license: null, stacks: [], sources: [] })}
                 className="rounded-full border border-copper/30 bg-copper-soft/60 px-3 py-1 text-copper transition duration-200 ease-ui hover:bg-copper-soft"
               >
                 清除筛选

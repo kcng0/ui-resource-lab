@@ -1,0 +1,29 @@
+{
+  "id": "magicui-iphone",
+  "title": "iPhone",
+  "source_url": "https://magicui.design/docs/components/iphone",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful"
+  ],
+  "scene": [
+    "marketing",
+    "portfolio"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/iphone"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/iphone\n```\n\nA mockup of the iPhone",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

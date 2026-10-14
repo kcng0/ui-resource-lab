@@ -1,0 +1,30 @@
+{
+  "id": "magicui-text-3d-flip",
+  "title": "Text 3D Flip",
+  "source_url": "https://magicui.design/docs/components/text-3d-flip",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful",
+    "cinematic"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/text-3d-flip"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/text-3d-flip\n```\n\nA text effect that flips each letter in 3D with a staggered animation on hover.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

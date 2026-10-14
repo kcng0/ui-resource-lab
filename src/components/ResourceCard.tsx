@@ -1,7 +1,7 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { stackLabel } from "../labels.ts";
 import type { Resource } from "../types.ts";
-import { KindBadge, LicenseBadge, StatusBadge } from "./Badges.tsx";
+import { KindBadge, LicenseBadge, StatusBadge, SourceBadge } from "./Badges.tsx";
 
 /** Accent per vibe slug / locked zh label — editorial, not rainbow spam. */
 const vibeAccent: Record<string, { bar: string; soft: string; mark: string }> = {
@@ -98,3 +98,4 @@ export function ResourceCard({
     </article>
   );
 }
+

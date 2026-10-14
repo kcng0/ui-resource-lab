@@ -1,7 +1,8 @@
-import { axisValueLabel, kindLabels, licenseLabels, stackLabel } from "./labels.ts";
-import type { Axis, BrowseQuery, License, Resource } from "./types.ts";
+import { axisValueLabel, kindLabels, licenseLabels, sourceLabels, stackLabel } from "./labels.ts";
+import type { Axis, BrowseQuery, License, Resource, Source } from "./types.ts";
 
 const licenses = new Set<License>(["free", "pro", "mixed"]);
+const sourcesSet = new Set<Source>(["shadcn", "magicui", "uiverse", "21st"]);
 
 export function parseBrowseQuery(params: URLSearchParams): BrowseQuery {
   const axis: Axis = params.get("axis") === "scene" ? "scene" : "vibe";
@@ -13,7 +14,11 @@ export function parseBrowseQuery(params: URLSearchParams): BrowseQuery {
     .split(",")
     .map((stack) => stack.trim())
     .filter(Boolean);
-  return { axis, category, q, license, stacks };
+  const sources = (params.get("source") ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter((s): s is Source => sourcesSet.has(s as Source));
+  return { axis, category, q, license, stacks, sources };
 }
 
 export function writeBrowseQuery(query: BrowseQuery): URLSearchParams {
@@ -23,6 +28,7 @@ export function writeBrowseQuery(query: BrowseQuery): URLSearchParams {
   if (query.q.trim()) params.set("q", query.q);
   if (query.license) params.set("license", query.license);
   if (query.stacks.length > 0) params.set("stack", query.stacks.join(","));
+  if (query.sources.length > 0) params.set("source", query.sources.join(","));
   return params;
 }
 
@@ -32,12 +38,16 @@ export function resourceText(resource: Resource): string {
   const stack = resource.stack.map((slug) => `${slug} ${stackLabel(slug)}`);
   const kind = kindLabels[resource.kind];
   const license = licenseLabels[resource.license];
+  const source = sourceLabels[resource.source];
   return [
     resource.id,
     resource.title,
     resource.notes,
     resource.usage,
     resource.source_url,
+    resource.source,
+    source.zh,
+    source.en,
     resource.kind,
     kind.zh,
     kind.en,
@@ -59,6 +69,9 @@ export function matchesQuery(resource: Resource, query: BrowseQuery): boolean {
   }
   if (query.license && resource.license !== query.license) return false;
   if (query.stacks.length > 0 && !query.stacks.some((stack) => resource.stack.includes(stack))) {
+    return false;
+  }
+  if (query.sources.length > 0 && !query.sources.includes(resource.source)) {
     return false;
   }
   const tokens = query.q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -83,6 +96,12 @@ export function collectStacks(resources: Resource[]): string[] {
     for (const stack of resource.stack) stacks.add(stack);
   }
   return [...stacks].sort((a, b) => stackLabel(a).localeCompare(stackLabel(b), "en"));
+}
+
+export function collectSources(resources: Resource[]): Source[] {
+  const found = new Set<Source>();
+  for (const resource of resources) found.add(resource.source);
+  return [...found].sort((a, b) => sourceLabels[a].en.localeCompare(sourceLabels[b].en, "en"));
 }
 
 export function readReturnSearch(state: unknown): string | null {

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/kcng0/ui-resource-lab/schema/resource.schema.json",
   "title": "UI Resource",
-  "description": "One curated UI resource. Approved records live in data/resources/. X/Twitter search hits and other unreviewed items live in data/inbox/ with status pending_review. vibe (气质) and scene (场景) are the browse axes. stack and license are filters. Slugs are open strings; do not invent a new axis.",
+  "description": "One curated UI component (or legacy library/tweet). Approved in data/resources/; unreviewed harvest in data/inbox/ with status pending_review. Entity is a component tile; source is filter/badge only. vibe and scene are browse axes; stack and license are filters.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -10,6 +10,7 @@
     "title",
     "source_url",
     "kind",
+    "source",
     "vibe",
     "scene",
     "stack",
@@ -39,7 +40,13 @@
     },
     "kind": {
       "type": "string",
-      "enum": ["component_library", "showcase", "open_source", "tweet"]
+      "enum": [
+        "component",
+        "component_library",
+        "showcase",
+        "open_source",
+        "tweet"
+      ]
     },
     "vibe": {
       "type": "array",
@@ -73,7 +80,11 @@
     "license": {
       "type": "string",
       "description": "Access model for the catalog: free, pro, or mixed. This is not an SPDX identifier.",
-      "enum": ["free", "pro", "mixed"]
+      "enum": [
+        "free",
+        "pro",
+        "mixed"
+      ]
     },
     "preview": {
       "type": "object",
@@ -101,13 +112,21 @@
     },
     "status": {
       "type": "string",
-      "enum": ["pending_review", "approved"]
+      "enum": [
+        "pending_review",
+        "approved"
+      ]
     },
     "x_meta": {
       "type": "object",
       "description": "Present only when kind is tweet.",
       "additionalProperties": false,
-      "required": ["author", "post_id", "lang", "queried_at"],
+      "required": [
+        "author",
+        "post_id",
+        "lang",
+        "queried_at"
+      ],
       "properties": {
         "author": {
           "type": "string",
@@ -134,18 +153,34 @@
     "updated_at": {
       "type": "string",
       "format": "date-time"
+    },
+    "source": {
+      "type": "string",
+      "description": "Origin library site. Used as browse filter and badge, not as the card title.",
+      "enum": [
+        "shadcn",
+        "magicui",
+        "uiverse",
+        "21st"
+      ]
     }
   },
   "allOf": [
     {
       "if": {
         "properties": {
-          "kind": { "const": "tweet" }
+          "kind": {
+            "const": "tweet"
+          }
         },
-        "required": ["kind"]
+        "required": [
+          "kind"
+        ]
       },
       "then": {
-        "required": ["x_meta"],
+        "required": [
+          "x_meta"
+        ],
         "properties": {
           "x_meta": {
             "$ref": "#/properties/x_meta"
@@ -157,7 +192,9 @@
   "dependentSchemas": {
     "x_meta": {
       "properties": {
-        "kind": { "const": "tweet" }
+        "kind": {
+          "const": "tweet"
+        }
       }
     }
   }
