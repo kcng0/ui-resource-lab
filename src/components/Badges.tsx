@@ -45,7 +45,8 @@ export function StatusBadge({ status }: { status: Status }) {
 export function SourceBadge({ source }: { source: Source }) {
   const label = sourceLabels[source];
   return (
-    <span className="inline-flex items-center rounded-full bg-ink/5 px-2 py-0.5 text-[11px] font-medium text-ink/70">
+    <span className="inline-flex items-center gap-1 rounded-full border border-ink/10 bg-white/95 px-2 py-0.5 text-[11px] font-medium text-ink/80 shadow-sm backdrop-blur">
+      <span className="size-1.5 rounded-full bg-copper" aria-hidden />
       {label.zh}
     </span>
   );

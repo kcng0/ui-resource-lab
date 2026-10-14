@@ -10,7 +10,7 @@ export function AppShell() {
     <div className="min-h-dvh">
       <header className="sticky top-0 z-20 border-b border-line/90 bg-paper/80 backdrop-blur-md">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-copper/40 to-transparent" />
-        <div className="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-5 py-4 sm:py-5">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-end justify-between gap-4 px-5 py-4 sm:py-5">
           <Link to="/" className="group text-inherit no-underline">
             <span className="flex items-center gap-2 text-[11px] font-medium tracking-[0.2em] text-copper">
               <span className="relative inline-flex size-3 items-center justify-center">
@@ -48,17 +48,17 @@ export function AppShell() {
           </nav>
         </div>
       </header>
-      <main className="mx-auto min-w-0 max-w-6xl px-5 py-8 sm:py-10">
+      <main className="mx-auto min-w-0 max-w-7xl px-5 py-8 sm:py-10">
         <Outlet />
       </main>
-      <footer className="mx-auto max-w-6xl border-t border-line/70 px-5 pt-6 pb-10 text-xs leading-5 text-muted">
+      <footer className="mx-auto max-w-7xl border-t border-line/70 px-5 pt-6 pb-10 text-xs leading-5 text-muted">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
           <p className="max-w-xl">
-            目录只展示 approved。X 搜索命中留在 inbox，直到人工批准。规则见{" "}
+            目录平铺已批准组件；库站不作主卡片。采收条目留在 inbox，直到人工批准。规则见{" "}
             <span className="text-ink/70">docs/INGEST.md</span>。
           </p>
           <p className="max-w-sm text-[11px] leading-4 opacity-80">
-            Approved only in catalog. X hits stay pending until a human moves them.
+            Approved components only in catalog. Harvest stays pending until a human approves.
           </p>
         </div>
       </footer>

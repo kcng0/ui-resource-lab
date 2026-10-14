@@ -1,7 +1,7 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { stackLabel } from "../labels.ts";
 import type { Resource } from "../types.ts";
-import { KindBadge, LicenseBadge, StatusBadge, SourceBadge } from "./Badges.tsx";
+import { KindBadge, LicenseBadge, SourceBadge, StatusBadge } from "./Badges.tsx";
 
 /** Accent per vibe slug / locked zh label — editorial, not rainbow spam. */
 const vibeAccent: Record<string, { bar: string; soft: string; mark: string }> = {
@@ -61,27 +61,34 @@ export function ResourceCard({
               </span>
             </div>
           )}
-          {primaryVibe ? (
-            <span
-              className={`absolute top-3 right-3 max-w-[70%] truncate rounded-full border border-white/50 bg-white/90 px-2.5 py-1 text-[11px] font-medium shadow-sm backdrop-blur ${accent.mark}`}
-            >
-              {primaryVibe}
-            </span>
-          ) : null}
+          <div className="absolute top-3 left-3 right-3 z-[1] flex items-start justify-between gap-2">
+            <SourceBadge source={resource.source} />
+            {primaryVibe ? (
+              <span
+                className={`max-w-[55%] truncate rounded-full border border-white/50 bg-white/90 px-2.5 py-1 text-[11px] font-medium shadow-sm backdrop-blur ${accent.mark}`}
+              >
+                {primaryVibe}
+              </span>
+            ) : null}
+          </div>
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-ink/25 to-transparent opacity-0 transition duration-200 group-hover:opacity-100" />
         </div>
-        <div className="flex flex-1 flex-col gap-3 p-4 pl-5">
-          <div className="flex items-center justify-between gap-2">
-            <KindBadge kind={resource.kind} />
+        <div className="flex flex-1 flex-col gap-2.5 p-3.5 pl-4 sm:p-4 sm:pl-5">
+          <div className="flex items-start justify-between gap-2">
+            <h2 className="font-serif text-[1.35rem] leading-[1.08] tracking-tight transition-colors duration-200 group-hover:text-copper sm:text-[1.5rem]">
+              {resource.title}
+            </h2>
             <LicenseBadge license={resource.license} />
           </div>
-          <h2 className="font-serif text-[1.65rem] leading-[1.05] tracking-tight transition-colors duration-200 group-hover:text-copper sm:text-[1.75rem]">
-            {resource.title}
-          </h2>
-          <p className="line-clamp-3 text-sm leading-6 text-muted">{resource.notes}</p>
-          <div className="mt-auto flex flex-wrap items-center gap-1.5 pt-1">
+          {resource.kind !== "component" ? (
+            <div className="flex flex-wrap gap-1.5">
+              <KindBadge kind={resource.kind} />
+            </div>
+          ) : null}
+          <p className="line-clamp-2 text-sm leading-5 text-muted">{resource.notes}</p>
+          <div className="mt-auto flex flex-wrap items-center gap-1.5 pt-0.5">
             {resource.status === "pending_review" ? <StatusBadge status={resource.status} /> : null}
-            {resource.stack.slice(0, 4).map((stack) => (
+            {resource.stack.slice(0, 3).map((stack) => (
               <span
                 key={stack}
                 className="rounded-md border border-line/70 bg-paper/90 px-1.5 py-0.5 text-[11px] text-muted"
@@ -89,8 +96,8 @@ export function ResourceCard({
                 {stackLabel(stack)}
               </span>
             ))}
-            {resource.stack.length > 4 ? (
-              <span className="text-[11px] text-muted">+{resource.stack.length - 4}</span>
+            {resource.stack.length > 3 ? (
+              <span className="text-[11px] text-muted">+{resource.stack.length - 3}</span>
             ) : null}
           </div>
         </div>
@@ -98,4 +105,3 @@ export function ResourceCard({
     </article>
   );
 }
-

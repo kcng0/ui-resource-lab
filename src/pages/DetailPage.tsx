@@ -49,6 +49,7 @@ export function DetailPage({ queue = false }: { queue?: boolean }) {
       <header className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-end">
         <div>
           <div className="flex flex-wrap items-center gap-2">
+            <SourceBadge source={resource.source} />
             <StatusBadge status={resource.status} />
             <KindBadge kind={resource.kind} />
             <LicenseBadge license={resource.license} />
