@@ -1,0 +1,30 @@
+{
+  "id": "magicui-cool-mode",
+  "title": "Cool Mode",
+  "source_url": "https://magicui.design/docs/components/cool-mode",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful",
+    "cinematic"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/cool-mode"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/cool-mode\n```\n\nCool mode effect for buttons, links, and other DOMs",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

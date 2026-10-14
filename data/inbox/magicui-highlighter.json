@@ -1,0 +1,30 @@
+{
+  "id": "magicui-highlighter",
+  "title": "Highlighter",
+  "source_url": "https://magicui.design/docs/components/highlighter",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful",
+    "cinematic"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/highlighter"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/highlighter\n```\n\nA text highlighter that mimics the effect of a human-drawn marker stroke.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

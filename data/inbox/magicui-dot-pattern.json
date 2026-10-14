@@ -1,0 +1,30 @@
+{
+  "id": "magicui-dot-pattern",
+  "title": "Dot Pattern",
+  "source_url": "https://magicui.design/docs/components/dot-pattern",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "cinematic",
+    "playful"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/dot-pattern"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/dot-pattern\n```\n\nA background dot pattern made with SVGs, fully customizable using Tailwind CSS.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

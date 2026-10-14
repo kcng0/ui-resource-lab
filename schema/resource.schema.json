@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kcng0/ui-resource-lab/schema/resource.schema.json",
+  "title": "UI Resource",
+  "description": "One curated UI component (or legacy library/tweet). Approved in data/resources/; unreviewed harvest in data/inbox/ with status pending_review. Entity is a component tile; source is filter/badge only. vibe and scene are browse axes; stack and license are filters.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "source_url",
+    "kind",
+    "source",
+    "vibe",
+    "scene",
+    "stack",
+    "license",
+    "preview",
+    "usage",
+    "notes",
+    "status",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable slug. Must match the JSON filename.",
+      "minLength": 1,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical page for this resource. For a tweet, the post URL."
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "component",
+        "component_library",
+        "showcase",
+        "open_source",
+        "tweet"
+      ]
+    },
+    "vibe": {
+      "type": "array",
+      "description": "气质. Primary browse axis. Open slugs, at least one.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "scene": {
+      "type": "array",
+      "description": "场景. Primary browse axis. Open slugs, at least one.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "stack": {
+      "type": "array",
+      "description": "Tech filter tags. Open slugs. May be empty.",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "license": {
+      "type": "string",
+      "description": "Access model for the catalog: free, pro, or mixed. This is not an SPDX identifier.",
+      "enum": [
+        "free",
+        "pro",
+        "mixed"
+      ]
+    },
+    "preview": {
+      "type": "object",
+      "description": "Screenshot path and/or embed URL. At least one is required.",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "screenshot": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Site path served by the app. Files in public/ are referenced as /previews/<file>."
+        },
+        "embed_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "usage": {
+      "type": "string",
+      "description": "Copy-pasteable usage snippet. Markdown with fenced code is fine."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending_review",
+        "approved"
+      ]
+    },
+    "x_meta": {
+      "type": "object",
+      "description": "Present only when kind is tweet.",
+      "additionalProperties": false,
+      "required": [
+        "author",
+        "post_id",
+        "lang",
+        "queried_at"
+      ],
+      "properties": {
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "post_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lang": {
+          "type": "string",
+          "minLength": 1
+        },
+        "queried_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "string",
+      "description": "Origin library site. Used as browse filter and badge, not as the card title.",
+      "enum": [
+        "shadcn",
+        "magicui",
+        "uiverse",
+        "21st"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "tweet"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "x_meta"
+        ],
+        "properties": {
+          "x_meta": {
+            "$ref": "#/properties/x_meta"
+          }
+        }
+      }
+    }
+  ],
+  "dependentSchemas": {
+    "x_meta": {
+      "properties": {
+        "kind": {
+          "const": "tweet"
+        }
+      }
+    }
+  }
+}

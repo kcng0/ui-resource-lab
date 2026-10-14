@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img">
+  <title>21st.dev example plate</title>
+  <rect width="800" height="500" fill="#f3ecdf"/>
+  <g fill="#fffdf8" stroke="#e4d8c6">
+    <rect x="48" y="48" width="220" height="180" rx="16"/>
+    <rect x="290" y="48" width="220" height="180" rx="16"/>
+    <rect x="532" y="48" width="220" height="180" rx="16"/>
+    <rect x="48" y="252" width="220" height="180" rx="16"/>
+    <rect x="290" y="252" width="220" height="180" rx="16"/>
+    <rect x="532" y="252" width="220" height="180" rx="16"/>
+  </g>
+  <rect x="72" y="78" width="92" height="10" rx="5" fill="#1c1915"/>
+  <rect x="72" y="100" width="140" height="8" rx="4" fill="#e7dccb"/>
+  <rect x="72" y="150" width="70" height="44" rx="8" fill="#9a431f"/>
+  <circle cx="400" cy="128" r="36" fill="none" stroke="#1c1915" stroke-width="2"/>
+  <rect x="356" y="176" width="88" height="8" rx="4" fill="#1c1915"/>
+  <rect x="560" y="86" width="160" height="100" rx="12" fill="#1c1915"/>
+  <rect x="578" y="108" width="80" height="8" rx="4" fill="#f3ecdf"/>
+  <rect x="578" y="128" width="120" height="8" rx="4" fill="#6d5c49"/>
+  <rect x="72" y="286" width="120" height="8" rx="4" fill="#1c1915"/>
+  <rect x="72" y="310" width="170" height="78" rx="12" fill="#efe4d2"/>
+  <rect x="314" y="300" width="170" height="12" rx="6" fill="#1c1915"/>
+  <rect x="314" y="328" width="140" height="8" rx="4" fill="#e7dccb"/>
+  <rect x="314" y="348" width="100" height="8" rx="4" fill="#e7dccb"/>
+  <rect x="560" y="292" width="48" height="48" rx="10" fill="#c46a3a"/>
+  <rect x="620" y="292" width="48" height="48" rx="10" fill="#1c1915"/>
+  <rect x="680" y="292" width="48" height="48" rx="10" fill="#d8c3a5"/>
+  <rect x="560" y="354" width="168" height="10" rx="5" fill="#1c1915"/>
+  <text x="752" y="478" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#1c1915" opacity="0.45">example plate</text>
+</svg>

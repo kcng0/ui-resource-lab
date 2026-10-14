@@ -1,0 +1,30 @@
+{
+  "id": "21st-dev",
+  "title": "21st.dev",
+  "source_url": "https://21st.dev/",
+  "kind": "component_library",
+  "vibe": [
+    "产品级组件橱窗"
+  ],
+  "scene": [
+    "marketing",
+    "landing",
+    "app-shell"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript"
+  ],
+  "license": "mixed",
+  "preview": {
+    "screenshot": "/previews/21st-dev.svg",
+    "embed_url": "https://21st.dev/"
+  },
+  "usage": "Approved seed. Each component page has a shadcn CLI install command. Copy prompt is the other public path. Code is written into your repo; there is no 21st runtime package.\n\nBrowsing is free. Two component copies per day are free. Membership unlocks unlimited copies and premium templates.\n\n```bash\nnpx shadcn@latest add \"<registry-url-from-the-component-page>\"\n```\n\nAgent client setup, separate from installing one component:\n\n```bash\nnpx @21st-dev/cli@latest init --client cursor\n```",
+  "notes": "Approved seed. 21st.dev is a community registry of React, TypeScript, and Tailwind components, templates, and shadcn themes. The homepage says install is one command through the shadcn CLI, and that the catalog is many authors and many styles rather than one aesthetic. Marketing blocks (heroes, pricing, testimonials) and UI primitives (buttons, inputs, dialogs) are both on the public page, so scene includes marketing, landing, and app-shell. license is mixed: browsing is free, daily free copies are capped, and membership unlocks more copies plus premium templates. Per-component licenses still differ.\n\nLibrary-card vibe is locked to 「产品级组件橱窗」. It labels this library page, not each component inside it. A human can override it later.",
+  "status": "approved",
+  "created_at": "2026-10-14T07:34:00.000Z",
+  "updated_at": "2026-10-14T10:00:27.092Z",
+  "source": "21st"
+}

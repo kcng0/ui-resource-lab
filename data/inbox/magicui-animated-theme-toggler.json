@@ -1,0 +1,29 @@
+{
+  "id": "magicui-animated-theme-toggler",
+  "title": "Theme Toggler",
+  "source_url": "https://magicui.design/docs/components/animated-theme-toggler",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/animated-theme-toggler"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/animated-theme-toggler\n```\n\nTheme toggle with View Transitions and animated clip-path masks (circle, polygons, star), optional viewport-centered origin.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

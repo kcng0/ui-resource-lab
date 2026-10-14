@@ -1,0 +1,30 @@
+{
+  "id": "shadcn-ui",
+  "title": "shadcn/ui",
+  "source_url": "https://ui.shadcn.com/",
+  "kind": "component_library",
+  "vibe": [
+    "克制工程基座"
+  ],
+  "scene": [
+    "docs",
+    "app-shell"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "radix"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/shadcn-ui.svg",
+    "embed_url": "https://ui.shadcn.com/"
+  },
+  "usage": "Approved seed. Install path from the public docs: the CLI copies component source into your repo. There is no runtime package.\n\n```bash\nnpx shadcn@latest init\nnpx shadcn@latest add button\n```\n\n```tsx\nimport { Button } from \"@/components/ui/button\";\n\nexport function SaveBar() {\n  return <Button type=\"submit\">Save</Button>;\n}\n```",
+  "notes": "Approved seed. shadcn/ui is open source; the GitHub repo LICENSE.md is MIT. The docs call the defaults a clean, minimal look, and describe the project as accessible components plus a code distribution platform. Their own line is that this is how you build your component library, rather than an npm package you import. This catalog still uses kind component_library because that is the approved seed kind. Public stack: React, Tailwind CSS, TypeScript, and Radix.\n\nLibrary-card vibe is locked to 「克制工程基座」. It labels this library page, not each component. A human can override it later.",
+  "status": "approved",
+  "created_at": "2026-10-14T07:34:00.000Z",
+  "updated_at": "2026-10-14T10:00:27.090Z",
+  "source": "shadcn"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "magicui-pixel-image",
+  "title": "Pixel Image",
+  "source_url": "https://magicui.design/docs/components/pixel-image",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/pixel-image"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/pixel-image\n```\n\nA component that displays an image with a pixelated effect, creating a retro aesthetic.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}

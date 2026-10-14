@@ -1,0 +1,30 @@
+{
+  "id": "magic-ui",
+  "title": "Magic UI",
+  "source_url": "https://magicui.design/",
+  "kind": "component_library",
+  "vibe": [
+    "动效营销"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/magic-ui.svg",
+    "embed_url": "https://magicui.design/"
+  },
+  "usage": "Approved seed. The public installation page says Magic UI uses the same process as shadcn/ui. This is their documented example (`Globe`).\n\n```bash\nnpx shadcn@latest init\nnpx shadcn@latest add @magicui/globe\n```\n\n```tsx\nimport { Globe } from \"@/components/ui/globe\";\n\nexport function Home() {\n  return <Globe />;\n}\n```",
+  "notes": "Approved seed. The homepage describes Magic UI as a UI library for design engineers: 150+ free and open-source animated components and effects, built with React, TypeScript, Tailwind CSS, and Motion, as a companion to shadcn/ui. The docs say the components, blocks, and templates are for landing pages and marketing materials. license is free from that public description.\n\nLibrary-card vibe is locked to 「动效营销」. It labels this library page, not each component. A human can override it later.",
+  "status": "approved",
+  "created_at": "2026-10-14T07:34:00.000Z",
+  "updated_at": "2026-10-14T10:00:27.091Z",
+  "source": "magicui"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "magicui-border-beam",
+  "title": "Border Beam",
+  "source_url": "https://magicui.design/docs/components/border-beam",
+  "kind": "component",
+  "source": "magicui",
+  "vibe": [
+    "playful"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript",
+    "motion"
+  ],
+  "license": "free",
+  "preview": {
+    "embed_url": "https://magicui.design/docs/components/border-beam"
+  },
+  "usage": "Harvested from Magic UI registry.\n\n```bash\nnpx shadcn@latest add @magicui/border-beam\n```\n\nAn animated beam of light which travels along the border of its container.",
+  "notes": "Auto-harvested from https://magicui.design/r/registry.json (type registry:ui). vibe/scene provisional for review.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:00:27.095Z",
+  "updated_at": "2026-10-14T10:00:27.095Z"
+}
