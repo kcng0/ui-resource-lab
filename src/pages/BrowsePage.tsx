@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { approvedResources } from "../catalog.ts";
+import { DensityToggle } from "../components/DensityToggle.tsx";
 import { ResourceCard } from "../components/ResourceCard.tsx";
+import { densityGridClass, parseDensity, type DensityCols } from "../lib/density.ts";
 import { axisValueLabel, licenseLabels, sourceLabels, stackLabel } from "../labels.ts";
 import {
   collectSources,
@@ -21,13 +23,22 @@ const componentCatalog = approvedResources.filter((resource) => resource.kind ==
 export function BrowsePage() {
   const [params, setParams] = useSearchParams();
   const query = parseBrowseQuery(params);
+  const cols = parseDensity(params.get("cols"));
 
   useEffect(() => {
     document.title = "组件目录 · ui-resource-lab";
   }, []);
 
   function update(next: BrowseQuery) {
-    setParams(writeBrowseQuery(next), { replace: true });
+    const nextParams = writeBrowseQuery(next);
+    if (cols === 4) nextParams.set("cols", "4");
+    setParams(nextParams, { replace: true });
+  }
+
+  function setCols(next: DensityCols) {
+    const nextParams = writeBrowseQuery(query);
+    if (next === 4) nextParams.set("cols", "4");
+    setParams(nextParams, { replace: true });
   }
 
   const forCategories = componentCatalog.filter((resource) =>
@@ -273,13 +284,18 @@ export function BrowsePage() {
               <p className="mt-2 text-sm text-muted">换个气质、来源或场景，或清掉筛选再试。</p>
             </div>
           ) : (
-            <div className="stagger mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-              {visible.map((resource) => (
-                <div key={resource.id} className="rise-in h-full">
-                  <ResourceCard resource={resource} href={`/r/${resource.id}`} />
-                </div>
-              ))}
-            </div>
+            <>
+              <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+                <DensityToggle value={cols} onChange={setCols} />
+              </div>
+              <div className={`stagger mt-5 ${densityGridClass(cols)}`}>
+                {visible.map((resource) => (
+                  <div key={resource.id} className="rise-in h-full">
+                    <ResourceCard resource={resource} href={`/r/${resource.id}`} />
+                  </div>
+                ))}
+              </div>
+            </>
           )}
         </div>
       </div>
