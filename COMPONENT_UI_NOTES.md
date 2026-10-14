@@ -18,3 +18,8 @@
 ## Data
 - Box tree may only have sample inbox/resources for compile. Full harvest lives on the user machine / remote.
 - Types require `source`; records without it will fail type-check until data is updated.
+
+## Preview (live-first)
+- Cards + detail prefer `preview.embed_url` (official / source live preview).
+- `preview.screenshot` is fallback only; resolve via `assetUrl()` so Pages `BASE_URL` (`/ui-resource-lab/`) is applied.
+- Card iframes are lazy (IntersectionObserver) and `pointer-events-none` so the tile stays a link.

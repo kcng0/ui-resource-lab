@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { assetUrl } from "../lib/assetUrl.ts";
 import type { Resource } from "../types.ts";
 
 export function PreviewFrame({ resource }: { resource: Resource }) {
-  const screenshot = resource.preview.screenshot;
+  const screenshot = assetUrl(resource.preview.screenshot);
   const embedUrl = resource.preview.embed_url;
-  const [mode, setMode] = useState<"shot" | "embed">(screenshot ? "shot" : "embed");
+  /** Prefer live source preview; local shot is fallback only. */
+  const [mode, setMode] = useState<"shot" | "embed">(embedUrl ? "embed" : "shot");
   const showEmbed = mode === "embed" && Boolean(embedUrl);
 
   return (
@@ -35,7 +37,7 @@ export function PreviewFrame({ resource }: { resource: Resource }) {
           ) : screenshot ? (
             <img
               src={screenshot}
-              alt={`${resource.title} 的本地示例画稿，不是对方站点的真实截图`}
+              alt={`${resource.title} 本地示意截图（非对方站内实时预览）`}
               className="h-full w-full object-cover"
             />
           ) : (
@@ -45,6 +47,17 @@ export function PreviewFrame({ resource }: { resource: Resource }) {
       </div>
       <figcaption className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div className="flex flex-wrap gap-2" role="group" aria-label="预览方式">
+          {embedUrl ? (
+            <button
+              type="button"
+              aria-pressed={mode === "embed"}
+              onClick={() => setMode("embed")}
+              className={toggleClass(mode === "embed")}
+            >
+              源站预览
+              <span className="ml-1 opacity-60">Live</span>
+            </button>
+          ) : null}
           {screenshot ? (
             <button
               type="button"
@@ -53,23 +66,13 @@ export function PreviewFrame({ resource }: { resource: Resource }) {
               className={toggleClass(mode === "shot")}
             >
               截图
-              <span className="ml-1 opacity-60">Screenshot</span>
-            </button>
-          ) : null}
-          {embedUrl ? (
-            <button
-              type="button"
-              aria-pressed={mode === "embed"}
-              onClick={() => setMode("embed")}
-              className={toggleClass(mode === "embed")}
-            >
-              嵌入
-              <span className="ml-1 opacity-60">Embed</span>
+              <span className="ml-1 opacity-60">Fallback</span>
             </button>
           ) : null}
         </div>
         <p className="max-w-md text-xs leading-5 text-muted">
-          画稿是本地示例，不是对方站点的真实截图。若嵌入空白，站点可能禁止被 iframe 引用。
+          优先嵌各源官方组件预览；源站更新会跟着变。截图仅作 fallback（已带 Pages BASE_URL）。站若禁 iframe
+          可切手动。
         </p>
       </figcaption>
     </figure>
