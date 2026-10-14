@@ -19,11 +19,11 @@
   "license": "mixed",
   "preview": {
     "screenshot": "/previews/21st/21st-sean0205-base-input.png",
-    "embed_url": "https://21st.dev/@sean0205/components/base-input"
+    "embed_url": "https://cdn.21st.dev/sean0205/base-input/default/bundle.1758883778654.html?theme=light"
   },
   "usage": "Browse live preview: https://21st.dev/@sean0205/components/base-input\n\nInstall via 21st registry (requires API key):\n\n```bash\nnpx shadcn@latest add \"https://21st.dev/r/sean0205/base-input?api_key=$API_KEY_21ST\"\n```",
-  "notes": "Auto-harvested from 21st community category `input` (Inputs). Author `@sean0205`. library: ReUI; license reported: mit; deps: class-variance-authority, @base-ui-components/react. vibe/scene provisional for review. Screenshot from Playwright capture of live component preview iframe (cdn.21st.dev), not OG. Skipped Magic UI (@dillionverma) duplicates.",
+  "notes": "Auto-harvested from 21st community category `input` (Inputs). Author `@sean0205`. library: ReUI; license reported: mit; deps: class-variance-authority, @base-ui-components/react. vibe/scene provisional for review. Screenshot from Playwright capture of live component preview iframe (cdn.21st.dev), not OG. Skipped Magic UI (@dillionverma) duplicates. Primary preview: live source via preview.embed_url (cdn.21st.dev …/bundle.<ts>.html?theme=light iframe). screenshot is optional offline fallback only; on GitHub Pages the UI must resolve screenshot with import.meta.env.BASE_URL (absolute /previews/… 404s).",
   "status": "pending_review",
   "created_at": "2026-10-14T10:34:54.985Z",
-  "updated_at": "2026-10-14T11:02:14.745Z"
+  "updated_at": "2026-10-14T12:28:09.091Z"
 }
