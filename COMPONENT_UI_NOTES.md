@@ -25,3 +25,5 @@
 - Card iframes are lazy (IntersectionObserver) and `pointer-events-none` so the tile stays a link.
 
 - Skip iframe when `isEmbeddablePreviewUrl(embed_url)` is false (docs shells / XFO); show screenshot instead so tiles are not blank.
+
+- Live-embed cards: iframe keeps pointer events (scroll/drag); only the meta block is the detail `Link`. Shot-only cards keep a media overlay link.
