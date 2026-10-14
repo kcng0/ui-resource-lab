@@ -88,18 +88,19 @@
     },
     "preview": {
       "type": "object",
-      "description": "Screenshot path and/or embed URL. At least one is required.",
+      "description": "Live source preview and optional offline screenshot. Prefer embed_url as the primary display source (origin site’s component preview). screenshot is optional fallback only. At least one of screenshot or embed_url is required. See docs/preview-policy.md.",
       "additionalProperties": false,
       "minProperties": 1,
       "properties": {
         "screenshot": {
           "type": "string",
           "minLength": 1,
-          "description": "Site path served by the app. Files in public/ are referenced as /previews/<file>."
+          "description": "Optional offline fallback image under public/. Harvest may store /previews/<file>. On GitHub Pages the UI must resolve this with import.meta.env.BASE_URL (absolute /previews/… ignores Vite base and 404s)."
         },
         "embed_url": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "Primary live preview URL from the origin site when available (e.g. 21st cdn.21st.dev …/bundle.<ts>.html?theme=light). Otherwise the component/docs page URL. UI should prefer this over screenshot."
         }
       }
     },

@@ -21,8 +21,8 @@
     "embed_url": "https://uiverse.io/andrew-demchenk0/green-deer-16"
   },
   "usage": "Harvested from Uiverse galaxy (`Inputs/andrew-demchenk0_green-deer-16.html`).\n\nOpen https://uiverse.io/andrew-demchenk0/green-deer-16 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
-  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `andrew-demchenk0`. tags: input. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `andrew-demchenk0`. tags: input. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS. Primary preview: live source via preview.embed_url (Uiverse element page). No dedicated official embed endpoint found in page HTML; iframe may be blocked by CSP/X-Frame-Options. screenshot is optional offline fallback; UI must join BASE_URL.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:34:54.985Z",
-  "updated_at": "2026-10-14T10:45:16.758Z"
+  "updated_at": "2026-10-14T12:28:09.091Z"
 }

@@ -91,10 +91,16 @@ Documented only. Not implemented in this scaffold.
 
 ## Preview and usage / 预览与用法
 
-- `preview.screenshot` is a site path. Put files in `public/` and reference them as `/previews/<file>`.
-- `preview.embed_url` is optional. Many sites refuse iframes; the UI falls back to the screenshot.
+**Primary display source is the live origin preview** via `preview.embed_url`. Local screenshots are optional fallback only. See [`docs/preview-policy.md`](./preview-policy.md).
+
+- `preview.embed_url` — URL of the **source site’s own** component preview (or closest live page). Prefer:
+  - **21st:** `cdn.21st.dev` … `/bundle.<ts>.html?theme=light` **or** `cdn.21st.dev/bundled/<id>.html?theme=light` (iframe body from the page), not the `@author/components/…` shell (UI only embeds cdn / `/embed` / `/preview`).
+  - **Uiverse:** element page URL (no dedicated embed endpoint found; iframe may be blocked).
+  - **shadcn / Magic UI:** docs page URL when no embed exists; docs often block iframes — document honestly.
+- `preview.screenshot` — optional offline fallback path under `public/`. Harvest may store `/previews/<file>`. **On GitHub Pages the UI must join `import.meta.env.BASE_URL`**; absolute `/previews/…` ignores Vite `base` and 404s. Do not invent a second data-side path convention without UI.
 - `usage` is the string the copy button writes to the clipboard. Markdown fences are fine.
 - At least one of `screenshot` or `embed_url` is required.
+
 
 ## Validate / 校验
 
