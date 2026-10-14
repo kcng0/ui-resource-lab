@@ -24,37 +24,58 @@ export function UsageBlock({ usage }: { usage: string }) {
   }
 
   return (
-    <section className="rounded-2xl border border-line bg-white/75 p-4 sm:p-5">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <h2 className="font-serif text-3xl leading-none">用法 Usage</h2>
+    <section className="overflow-hidden rounded-2xl border border-line/90 shadow-[0_20px_44px_-28px_rgba(26,22,18,0.5)]">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line/80 bg-white/90 px-4 py-3 sm:px-5">
+        <div>
+          <p className="text-[11px] font-medium tracking-[0.16em] text-copper uppercase">Usage</p>
+          <h2 className="mt-0.5 font-serif text-2xl leading-none sm:text-3xl">用法</h2>
+        </div>
         <button
           type="button"
           onClick={() => {
             void onCopy();
           }}
-          className="rounded-full bg-copper px-4 py-2 text-sm text-paper"
+          className={
+            copied
+              ? "rounded-full bg-sage px-4 py-2 text-sm text-paper transition duration-200 ease-ui"
+              : "rounded-full bg-copper px-4 py-2 text-sm text-paper transition duration-200 ease-ui hover:bg-copper/90"
+          }
         >
-          {copied ? "已复制 Copied" : "复制用法 Copy usage"}
+          {copied ? "已复制 · Copied" : "复制用法 · Copy"}
         </button>
       </div>
       <p role="status" className="sr-only">
         {copied ? "用法已复制到剪贴板" : ""}
       </p>
-      <div className="mt-4 space-y-3">
+      <div className="space-y-0 bg-[#faf7f1]">
         {blocks.map((block, index) =>
           block.type === "code" ? (
-            <div key={index} className="overflow-hidden rounded-xl bg-ink text-paper">
-              {block.lang ? (
-                <div className="px-4 pt-3 text-[11px] tracking-[0.14em] text-paper/60 uppercase">
-                  {block.lang}
+            <div key={index} className="editor-chrome border-t border-white/5">
+              <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-2">
+                <div className="flex items-center gap-2">
+                  <span className="flex gap-1" aria-hidden>
+                    <span className="size-2 rounded-full bg-[#e07a6a]/60" />
+                    <span className="size-2 rounded-full bg-[#e0b85c]/60" />
+                    <span className="size-2 rounded-full bg-[#7cbc7a]/60" />
+                  </span>
+                  {block.lang ? (
+                    <span className="font-mono text-[11px] tracking-wider text-paper/55 uppercase">
+                      {block.lang}
+                    </span>
+                  ) : (
+                    <span className="font-mono text-[11px] text-paper/45">code</span>
+                  )}
                 </div>
-              ) : null}
-              <pre className="overflow-x-auto px-4 py-3 text-[13px] leading-6">
+              </div>
+              <pre className="overflow-x-auto px-4 py-3.5 font-mono text-[13px] leading-6 text-[#f0e6d8]">
                 <code>{block.text}</code>
               </pre>
             </div>
           ) : (
-            <p key={index} className="text-sm leading-6 whitespace-pre-wrap text-ink/85">
+            <p
+              key={index}
+              className="border-t border-line/50 px-4 py-3.5 text-sm leading-6 whitespace-pre-wrap text-ink/85 sm:px-5"
+            >
               {block.text}
             </p>
           ),
