@@ -52,9 +52,22 @@ The filename stem must equal `id`. One resource per file, so approval is a file 
 - **Filters / 筛选:** `stack` (tech slugs), `license` (`free` | `pro` | `mixed`).
 - **Kinds:** `component_library` | `showcase` | `open_source` | `tweet`.
 
-Slugs are open strings, not a closed enum. Example records use slugs such as `minimal`, `cinematic`, `landing`, and `dashboard`. A new slug is fine when a human names it. An agent must not invent a new axis.
+Slugs are open strings, not a closed enum. Scene values on the seed records include `landing`, `marketing`, `docs`, and `app-shell`. A new slug is fine when a human names it. An agent must not invent a new axis.
 
-slug 是开放字符串，不是封闭枚举。示例记录用了 `minimal`、`cinematic`、`landing`、`dashboard` 这类 slug。人指定的新 slug 可以用。不要擅自增加新的主轴。
+slug 是开放字符串，不是封闭枚举。种子记录的 scene 用了 `landing`、`marketing`、`docs`、`app-shell`。人指定的新 slug 可以用。不要擅自增加新的主轴。
+
+### Locked library-card vibes / 已锁定的库卡片气质
+
+These four URLs are tagged as library pages, not scraped component by component. `vibe[]` must use these exact strings until a human overrides them:
+
+这四条按库页面打标，不按站内单个组件深挖。在人工改口之前，`vibe[]` 必须用下面的原文字符串：
+
+| source_url | vibe |
+| --- | --- |
+| https://uiverse.io/ | `趣味交互` |
+| https://21st.dev/ | `产品级组件橱窗` |
+| https://magicui.design/ | `动效营销` |
+| https://ui.shadcn.com/ | `克制工程基座` |
 
 `license` describes the access model used by this catalog (free, paid, or both). It is not an SPDX id.
 

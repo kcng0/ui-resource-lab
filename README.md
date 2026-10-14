@@ -24,7 +24,7 @@ npm run preview    # 预览构建结果
 ## 目录里能做什么 / What the app does
 
 - 按 **气质 vibe** 或 **场景 scene** 分组浏览
-- 全文搜索（中英文标签都能命中，例如「极简」「free」）
+- 全文搜索（中英文标签都能命中，例如「动效营销」「free」）
 - 按 **stack** 与 **license**（`free` | `pro` | `mixed`）筛选
 - 卡片进入详情：来源链接、预览、笔记、一键复制 `usage`
 - 预览默认是本地示例画稿；有 `embed_url` 时可改看 iframe。站点若禁止嵌入，改回截图
@@ -43,7 +43,7 @@ public/previews/              示例画稿
 src/                          Vite + React + TypeScript + Tailwind
 ```
 
-已批准的种子是这四条组件库：Uiverse、21st.dev、Magic UI、shadcn/ui。记录按公开信息填写；气质拿不准的写在笔记 `TODO` 里，没有新造分类。`data/inbox/` 目前是空的。`public/previews/` 仍是本地画稿，不是那些站点的真实截图。
+已批准的种子是这四条组件库：Uiverse、21st.dev、Magic UI、shadcn/ui。气质是库卡片标签，写在 `vibe[]` 里：趣味交互、产品级组件橱窗、动效营销、克制工程基座。人以后可以改。`data/inbox/` 目前是空的。`public/previews/` 仍是本地画稿，不是那些站点的真实截图。
 
 批准一条 inbox 记录：把 `status` 改成 `approved`，更新 `updated_at`，把文件移到 `data/resources/`，再跑 `npm run validate`。细节和「规则之外就停下来问人」见 [docs/INGEST.md](docs/INGEST.md)。
 
