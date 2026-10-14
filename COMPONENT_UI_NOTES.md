@@ -27,3 +27,7 @@
 - Skip iframe when `isEmbeddablePreviewUrl(embed_url)` is false (docs shells / XFO); show screenshot instead so tiles are not blank.
 
 - Live-embed cards: iframe keeps pointer events (scroll/drag); only the meta block is the detail `Link`. Shot-only cards keep a media overlay link.
+
+## Inbox review + density
+- Inbox: checkbox 通过 + 全选可见 / 复制已选 id / 下载 .txt（静态 Pages 不能真入库；把 id 交给 Research promote）。
+- Browse + Inbox: URL cols=2|4 密度开关（默认 2/行；cols=4 为每行四卡）。
