@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-cssbuttons-io-funny-dog-69",
+  "title": "Funny Dog 69",
+  "source_url": "https://uiverse.io/cssbuttons-io/funny-dog-69",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-cssbuttons-io-funny-dog-69.png",
+    "embed_url": "https://uiverse.io/cssbuttons-io/funny-dog-69"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Buttons/cssbuttons-io_funny-dog-69.html`).\n\nOpen https://uiverse.io/cssbuttons-io/funny-dog-69 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `cssbuttons-io`. tags: button, glow. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

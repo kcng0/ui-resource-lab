@@ -19,11 +19,12 @@
   ],
   "license": "free",
   "preview": {
-    "embed_url": "https://ui.shadcn.com/docs/components/collapsible"
+    "embed_url": "https://ui.shadcn.com/docs/components/collapsible",
+    "screenshot": "/previews/shadcn/shadcn-collapsible.png"
   },
   "usage": "Harvested from official shadcn registry (new-york).\n\n```bash\nnpx shadcn@latest add collapsible\n```",
-  "notes": "Auto-harvested from https://ui.shadcn.com/r/styles/new-york/registry.json (type registry:ui). vibe/scene provisional for review. Docs URL assumed from name.",
+  "notes": "Auto-harvested from https://ui.shadcn.com/r/styles/new-york/registry.json (type registry:ui). vibe/scene provisional for review. Docs URL assumed from name. Screenshot backfilled from docs page preview region.",
   "status": "pending_review",
   "created_at": "2026-10-14T10:00:27.095Z",
-  "updated_at": "2026-10-14T10:00:27.095Z"
+  "updated_at": "2026-10-14T10:34:54.985Z"
 }

@@ -1,0 +1,29 @@
+{
+  "id": "21st-ruixen-ui-hero-section-with-gradient",
+  "title": "HeroSectionWithGradient",
+  "source_url": "https://21st.dev/@ruixen.ui/components/hero-section-with-gradient",
+  "kind": "component",
+  "source": "21st",
+  "vibe": [
+    "产品级组件橱窗"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript"
+  ],
+  "license": "mixed",
+  "preview": {
+    "screenshot": "/previews/21st/21st-ruixen-ui-hero-section-with-gradient.png",
+    "embed_url": "https://21st.dev/@ruixen.ui/components/hero-section-with-gradient"
+  },
+  "usage": "Browse live preview: https://21st.dev/@ruixen.ui/components/hero-section-with-gradient\n\nInstall via 21st registry (requires API key):\n\n```bash\nnpx shadcn@latest add \"https://21st.dev/r/ruixen.ui/hero-section-with-gradient?api_key=$API_KEY_21ST\"\n```",
+  "notes": "Auto-harvested from 21st community category `hero` (Hero). Author `@ruixen.ui`. library: Ruixen UI; license reported: no-license; deps: gsap, next, framer-motion. vibe/scene provisional for review. Screenshot from 21st OG image. Skipped Magic UI (@dillionverma) duplicates.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

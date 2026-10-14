@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-shoh2008-stale-panda-35",
+  "title": "Stale Panda 35",
+  "source_url": "https://uiverse.io/Shoh2008/stale-panda-35",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-shoh2008-stale-panda-35.png",
+    "embed_url": "https://uiverse.io/Shoh2008/stale-panda-35"
+  },
+  "usage": "Harvested from Uiverse galaxy (`loaders/Shoh2008_stale-panda-35.html`).\n\nOpen https://uiverse.io/Shoh2008/stale-panda-35 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Shoh2008`. tags: loader. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

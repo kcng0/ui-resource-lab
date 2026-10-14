@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-devestter-fuzzy-panda-69",
+  "title": "Fuzzy Panda 69",
+  "source_url": "https://uiverse.io/devestter/fuzzy-panda-69",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell",
+    "docs"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-devestter-fuzzy-panda-69.png",
+    "embed_url": "https://uiverse.io/devestter/fuzzy-panda-69"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Inputs/devestter_fuzzy-panda-69.html`).\n\nOpen https://uiverse.io/devestter/fuzzy-panda-69 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `devestter`. tags: input, about me, clean, btn. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

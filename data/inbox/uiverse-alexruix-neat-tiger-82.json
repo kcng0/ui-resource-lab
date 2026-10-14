@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-alexruix-neat-tiger-82",
+  "title": "Neat Tiger 82",
+  "source_url": "https://uiverse.io/alexruix/neat-tiger-82",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-alexruix-neat-tiger-82.png",
+    "embed_url": "https://uiverse.io/alexruix/neat-tiger-82"
+  },
+  "usage": "Harvested from Uiverse galaxy (`loaders/alexruix_neat-tiger-82.html`).\n\nOpen https://uiverse.io/alexruix/neat-tiger-82 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `alexruix`. tags: loader. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

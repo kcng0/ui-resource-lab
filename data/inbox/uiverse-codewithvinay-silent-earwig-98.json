@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-codewithvinay-silent-earwig-98",
+  "title": "Silent Earwig 98",
+  "source_url": "https://uiverse.io/Codewithvinay/silent-earwig-98",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell",
+    "docs"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-codewithvinay-silent-earwig-98.png",
+    "embed_url": "https://uiverse.io/Codewithvinay/silent-earwig-98"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Inputs/Codewithvinay_silent-earwig-98.html`).\n\nOpen https://uiverse.io/Codewithvinay/silent-earwig-98 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Codewithvinay`. tags: input. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

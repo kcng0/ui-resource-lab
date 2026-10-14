@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-uncannypotato69-odd-pig-10",
+  "title": "Odd Pig 10",
+  "source_url": "https://uiverse.io/Uncannypotato69/odd-pig-10",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "marketing",
+    "landing"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-uncannypotato69-odd-pig-10.png",
+    "embed_url": "https://uiverse.io/Uncannypotato69/odd-pig-10"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Cards/Uncannypotato69_odd-pig-10.html`).\n\nOpen https://uiverse.io/Uncannypotato69/odd-pig-10 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Uncannypotato69`. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

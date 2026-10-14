@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-kingfress-young-dragon-73",
+  "title": "Young Dragon 73",
+  "source_url": "https://uiverse.io/KINGFRESS/young-dragon-73",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-kingfress-young-dragon-73.png",
+    "embed_url": "https://uiverse.io/KINGFRESS/young-dragon-73"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Buttons/KINGFRESS_young-dragon-73.html`).\n\nOpen https://uiverse.io/KINGFRESS/young-dragon-73 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `KINGFRESS`. tags: button, progress bar. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

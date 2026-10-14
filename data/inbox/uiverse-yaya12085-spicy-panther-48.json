@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-yaya12085-spicy-panther-48",
+  "title": "Spicy Panther 48",
+  "source_url": "https://uiverse.io/Yaya12085/spicy-panther-48",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-yaya12085-spicy-panther-48.png",
+    "embed_url": "https://uiverse.io/Yaya12085/spicy-panther-48"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Forms/Yaya12085_spicy-panther-48.html`).\n\nOpen https://uiverse.io/Yaya12085/spicy-panther-48 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `Yaya12085`. tags: subscription, form. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

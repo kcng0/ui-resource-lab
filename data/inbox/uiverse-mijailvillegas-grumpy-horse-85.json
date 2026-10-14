@@ -1,0 +1,28 @@
+{
+  "id": "uiverse-mijailvillegas-grumpy-horse-85",
+  "title": "Grumpy Horse 85",
+  "source_url": "https://uiverse.io/MijailVillegas/grumpy-horse-85",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell",
+    "docs"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-mijailvillegas-grumpy-horse-85.png",
+    "embed_url": "https://uiverse.io/MijailVillegas/grumpy-horse-85"
+  },
+  "usage": "Harvested from Uiverse galaxy (`Inputs/MijailVillegas_grumpy-horse-85.html`).\n\nOpen https://uiverse.io/MijailVillegas/grumpy-horse-85 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `MijailVillegas`. tags: cyberpunk, input, neon, futuristic. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "21st-meschacirung-features-4",
+  "title": "Features 4",
+  "source_url": "https://21st.dev/@meschacirung/components/features-4",
+  "kind": "component",
+  "source": "21st",
+  "vibe": [
+    "产品级组件橱窗"
+  ],
+  "scene": [
+    "landing",
+    "marketing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript"
+  ],
+  "license": "mixed",
+  "preview": {
+    "screenshot": "/previews/21st/21st-meschacirung-features-4.png",
+    "embed_url": "https://21st.dev/@meschacirung/components/features-4"
+  },
+  "usage": "Browse live preview: https://21st.dev/@meschacirung/components/features-4\n\nInstall via 21st registry (requires API key):\n\n```bash\nnpx shadcn@latest add \"https://21st.dev/r/meschacirung/features-4?api_key=$API_KEY_21ST\"\n```",
+  "notes": "Auto-harvested from 21st community category `features` (Features). Author `@meschacirung`. library: Tailark; license reported: mit; deps: lucide-react. vibe/scene provisional for review. Screenshot from 21st OG image. Skipped Magic UI (@dillionverma) duplicates.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

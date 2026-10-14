@@ -1,0 +1,27 @@
+{
+  "id": "uiverse-santhoshsj-dev-slippery-eel-89",
+  "title": "Slippery Eel 89",
+  "source_url": "https://uiverse.io/SanthoshSJ-Dev/slippery-eel-89",
+  "kind": "component",
+  "source": "uiverse",
+  "vibe": [
+    "趣味交互"
+  ],
+  "scene": [
+    "app-shell"
+  ],
+  "stack": [
+    "html",
+    "css"
+  ],
+  "license": "free",
+  "preview": {
+    "screenshot": "/previews/uiverse/uiverse-santhoshsj-dev-slippery-eel-89.png",
+    "embed_url": "https://uiverse.io/SanthoshSJ-Dev/slippery-eel-89"
+  },
+  "usage": "Harvested from Uiverse galaxy (`loaders/SanthoshSJ-Dev_slippery-eel-89.html`).\n\nOpen https://uiverse.io/SanthoshSJ-Dev/slippery-eel-89 and copy HTML/CSS (MIT via uiverse-io/galaxy).",
+  "notes": "Auto-harvested from https://github.com/uiverse-io/galaxy. Author `SanthoshSJ-Dev`. tags: loader, big, battery, mobile, charger. vibe/scene provisional for review. Screenshot rendered locally from galaxy HTML+CSS.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}

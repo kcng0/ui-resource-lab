@@ -1,0 +1,29 @@
+{
+  "id": "21st-ali-hussein-dev-card-with-cross-patter",
+  "title": "Card with Cross Patter",
+  "source_url": "https://21st.dev/@Ali-Hussein-dev/components/card-with-cross-patter",
+  "kind": "component",
+  "source": "21st",
+  "vibe": [
+    "产品级组件橱窗"
+  ],
+  "scene": [
+    "marketing",
+    "landing"
+  ],
+  "stack": [
+    "react",
+    "tailwind",
+    "typescript"
+  ],
+  "license": "mixed",
+  "preview": {
+    "screenshot": "/previews/21st/21st-ali-hussein-dev-card-with-cross-patter.png",
+    "embed_url": "https://21st.dev/@Ali-Hussein-dev/components/card-with-cross-patter"
+  },
+  "usage": "Browse live preview: https://21st.dev/@Ali-Hussein-dev/components/card-with-cross-patter\n\nInstall via 21st registry (requires API key):\n\n```bash\nnpx shadcn@latest add \"https://21st.dev/r/Ali-Hussein-dev/card-with-cross-patter?api_key=$API_KEY_21ST\"\n```",
+  "notes": "Auto-harvested from 21st community category `card` (Cards). Author `@Ali-Hussein-dev`. library: Indie UI; license reported: mit; deps: framer-motion. vibe/scene provisional for review. Screenshot from 21st OG image. Skipped Magic UI (@dillionverma) duplicates.",
+  "status": "pending_review",
+  "created_at": "2026-10-14T10:34:54.985Z",
+  "updated_at": "2026-10-14T10:45:16.758Z"
+}
