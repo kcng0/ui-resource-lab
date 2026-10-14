@@ -2,7 +2,10 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main, cursor/scaffold-browse-app-5460]
+    branches:
+      - main
+      - cursor/scaffold-browse-app-5460
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -36,6 +39,7 @@ jobs:
           path: dist
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:
