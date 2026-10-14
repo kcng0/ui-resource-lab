@@ -1,4 +1,6 @@
+import { useEffect, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { assetUrl, isEmbeddablePreviewUrl } from "../lib/assetUrl.ts";
 import { stackLabel } from "../labels.ts";
 import type { Resource } from "../types.ts";
 import { KindBadge, LicenseBadge, SourceBadge, StatusBadge } from "./Badges.tsx";
@@ -26,6 +28,79 @@ function accentFor(resource: Resource) {
   return (key && vibeAccent[key]) || fallbackAccent;
 }
 
+/** Live source preview first; local screenshot (BASE_URL-aware) as fallback. */
+function CardMedia({
+  resource,
+  accent,
+}: {
+  resource: Resource;
+  accent: { soft: string; mark: string };
+}) {
+  const rawEmbed = resource.preview.embed_url;
+  const embedUrl = isEmbeddablePreviewUrl(rawEmbed) ? rawEmbed : undefined;
+  const shot = assetUrl(resource.preview.screenshot);
+  const hostRef = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
+  const [embedFailed, setEmbedFailed] = useState(false);
+
+  useEffect(() => {
+    const node = hostRef.current;
+    if (!node || !embedUrl) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setInView(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "160px 0px", threshold: 0.05 },
+    );
+    io.observe(node);
+    return () => io.disconnect();
+  }, [embedUrl]);
+
+  const showEmbed = Boolean(embedUrl) && inView && !embedFailed;
+
+  return (
+    <div ref={hostRef} className="relative aspect-[16/10] overflow-hidden bg-paper-deep">
+      {shot ? (
+        <img
+          src={shot}
+          alt=""
+          className={`absolute inset-0 h-full w-full object-cover transition duration-500 ease-ui group-hover:scale-[1.04] ${
+            showEmbed ? "opacity-0" : "opacity-100"
+          }`}
+          loading="lazy"
+          onError={(event) => {
+            event.currentTarget.style.visibility = "hidden";
+          }}
+        />
+      ) : (
+        <div
+          className={`absolute inset-0 flex items-center justify-center ${accent.soft} ${
+            showEmbed ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <span className={`font-serif text-6xl leading-none ${accent.mark}`}>
+            {resource.title.slice(0, 1)}
+          </span>
+        </div>
+      )}
+      {showEmbed && embedUrl ? (
+        <iframe
+          title={`${resource.title} live preview`}
+          src={embedUrl}
+          className="pointer-events-none absolute inset-0 h-full w-full bg-white"
+          sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+          referrerPolicy="no-referrer"
+          loading="lazy"
+          onError={() => setEmbedFailed(true)}
+        />
+      ) : null}
+    </div>
+  );
+}
+
 export function ResourceCard({
   resource,
   href,
@@ -34,7 +109,6 @@ export function ResourceCard({
   href: string;
 }) {
   const [params] = useSearchParams();
-  const screenshot = resource.preview.screenshot;
   const accent = accentFor(resource);
   const primaryVibe = resource.vibe[0];
 
@@ -46,21 +120,8 @@ export function ResourceCard({
         state={{ from: params.toString() }}
         className="flex h-full flex-col text-inherit no-underline"
       >
-        <div className="relative aspect-[16/10] overflow-hidden bg-paper-deep">
-          {screenshot ? (
-            <img
-              src={screenshot}
-              alt=""
-              className="h-full w-full object-cover transition duration-500 ease-ui group-hover:scale-[1.04]"
-              loading="lazy"
-            />
-          ) : (
-            <div className={`flex h-full items-center justify-center ${accent.soft}`}>
-              <span className={`font-serif text-6xl leading-none ${accent.mark}`}>
-                {resource.title.slice(0, 1)}
-              </span>
-            </div>
-          )}
+        <div className="relative">
+          <CardMedia resource={resource} accent={accent} />
           <div className="absolute top-3 left-3 right-3 z-[1] flex items-start justify-between gap-2">
             <SourceBadge source={resource.source} />
             {primaryVibe ? (
